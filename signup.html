@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>회원가입 폼 만들기</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+</head>
+<body>
+    <h1 style="text-align:center;">회원가입</h1>
+    
+    <form action="a.html" method="post">
+        <fieldset>
+            <legend>필수 입력 정보</legend>
+            <p>
+                <!--lable로 묶어주면 이메일을 클릭하면 자동으로 박스에 커서가 간다. 비추천 -->
+                <label>
+                    이메일
+                    <input type="email" name="email">
+                </label>
+            </p>
+            <p>
+                <!-- input에 id를 지정해주고 for로 id를 가리킨다. 이 방식 추천 -->
+                <label for="password">비밀번호</label>
+                <input type="password" id="password">
+            </p>
+            <p>
+                비밀번호 확인
+                <input type="password" name="password">
+            </p>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>선택 입력 정보</legend>
+            <p>
+                <select name="phone1">
+                    <option value="010">010</option>
+                    <option value="02">02</option>
+                    <option value="031">031</option>
+                    <option value="070">070</option>
+                </select>
+                <input type="text" name="phone2" size="6" maxlength="4">
+                <input type="text" name="phone3" size="6" maxlength="4">
+            </p>
+            <p>
+                <input type="date" name="birth">
+            </p>
+        </fieldset>
+        <br/>
+        <div style="text-align:center;">
+        <button type="submit" style="padding:10px 25px;">가입</button>
+        <button type="reset" style="padding:10px 25px;">취소</button>
+        </div>
+    </form>
+</body>
+</html>
