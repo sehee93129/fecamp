@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>회원가입 폼 만들기</title>
+    <link rel="stylesheet" href="join.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+</head>
+<body>
+    <h1>join</h1>
+    
+    <form action="a.html" method="post">
+        <fieldset>
+            <legend>필수 입력 정보</legend>
+            <table class="table-box">
+                <tr>
+                    <td>
+                        <label for="email">이메일</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">비밀번호</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="passwordcheck">비밀번호 확인</label>
+                    </td>
+                    <td>
+                        <input type="password" id="passwordcheck">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>선택 입력 정보</legend>
+            <table class="table-box">
+                <tr>
+                    <td>
+                        <label for="phone2">전화번호</label>
+                    </td>
+                    <td>
+                        <select name="phone1" id="phone1">
+                            <option value="010">010</option>
+                            <option value="02">02</option>
+                            <option value="031">031</option>
+                            <option value="070">070</option>
+                        </select>
+                        <input type="text" name="phone2" id="phone2" size="6" maxlength="4">
+                        <input type="text" name="phone3" id="phone3" size="6" maxlength="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="birth">생년월일</label>
+                    </td>
+                    <td>
+                        <input type="date" name="birth" id="birth">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br/>
+        <div class="box">
+            <button type="submit">가입</button>
+            <button type="reset">취소</button>
+        </div>
+    </form>
+</body>
+</html>
