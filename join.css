@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+h1{
+    text-align: center;
+}
+button{
+    padding: 5px 20px;
+}
+legend{
+    text-align: center;
+}
+.table-box{
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    text-align: center;
+}
